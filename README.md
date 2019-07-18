@@ -5,11 +5,14 @@ Source codes are categorized in three files, sequential DLSH (DLSH.c), parallel 
 
 For parallel:
 Compilation command: nvcc PDLSH.cu -arch=sm_35 -o pdlsh
-Execution command: ./pdlsh ../instances/TSPLIB/kroA200.tsp 
+Execution command: ./pdlsh ../TSPLIB/TSPLIB/kroA200.tsp 
 
 prerequisite:
 1. In CUDA code, a 64-bit atomicMin() function has been used that supports on a GPU device which has computing capability 3.5 and higher. 
 
 For sequential:
 Compilation comand: gcc DLSH.c -lm -o dlsh
-Execution command: ./dlsh ../instances/TSPLIB/kroA200.tsp 
+Execution command: ./dlsh ../TSPLIB/TSPLIB/kroA200.tsp 
+
+TRP instannces are available at following link:
+http://antor.uantwerpen.be/instances-in-the-paper-efficient-grasp-vnd-and-grasp-vns-metaheuristics-for-the-traveling-repairman-problem/
