@@ -18,4 +18,4 @@ TRP instannces are available at following link:
 http://antor.uantwerpen.be/instances-in-the-paper-efficient-grasp-vnd-and-grasp-vns-metaheuristics-for-the-traveling-repairman-problem/
 
 If you find this helpful and writing a research paper, you can encourage us citing this work as
-Pramod Yelmewad and Basavaraj Talawar, Parallel deterministic local search heuristic for minimum latency problem, cluster computing, DOI: 10.1007/s10586-020-03173-4
+"Pramod Yelmewad and Basavaraj Talawar, Parallel deterministic local search heuristic for minimum latency problem, cluster computing, DOI: 10.1007/s10586-020-03173-4"
