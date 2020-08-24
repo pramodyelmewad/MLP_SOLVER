@@ -92,7 +92,7 @@ long swap(int *rt, long n, float *posx, float*posy, long cost)
 						-
 						 (n-i)*distD(rt[i-1], rt[i], posx, posy);
 				}
-	 			else
+	 			else if(j < n-1)
 				{
 					change = ((n-i)*distD(rt[i-1], rt[j], posx, posy)
 						+(n-i-1)*distD(rt[j], rt[i+1], posx, posy)
@@ -173,9 +173,9 @@ long two_opt(int *route, long n, float *posx, float*posy, long cost)
 	{
 		flag = 0;
 		tmp_cost = cost;
-		for(i = 1; i < n-1; i++)
+		for(i = 1; i < n-2; i++)
 		{
-			for(j = i+2; j < n; j++)
+			for(j = i+2; j < n-1; j++)
 			{
 				new_cost = get_route_dst(route, posx, posy, i, j, n);
 				if(new_cost < tmp_cost)
